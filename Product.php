@@ -2,11 +2,11 @@
 
 class Product
 {
-    public $id;
-    public $name;
-    public $price;
+    private int $id;
+    private string $name;
+    private float $price;
 
-    public function __construct($id, $name, $price)
+    public function __construct(int $id, string $name, float $price)
     {
         $this->id = $id;
         $this->name = $name;
@@ -27,6 +27,5 @@ class Product
     }
 }
 
-
-$product = new Product(1, "T-shirt", 22.365);
+$product = new Product(1, "T-shirt", 19.99);
 $product->showDetails();
